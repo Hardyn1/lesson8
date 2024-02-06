@@ -1,9 +1,255 @@
+/*      ADDING FONTS       */
 @font-face {
-  font-family: "MyWebFont";
-  src: url("webfont.eot"); /* IE9 Compat Modes */
-  src: url("webfont.eot?#iefix") format("embedded-opentype"),
-    /* IE6-IE8 */ url("webfont.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("webfont.woff") format("woff"),
-    /* Pretty Modern Browsers */ url("webfont.ttf") format("truetype"),
-    /* Safari, Android, iOS */ url("webfont.svg#svgFontName") format("svg"); /* Legacy iOS */
+  font-family: "Museo Sans 300";
+  src: url("../fonts/MuseoSansCyrl-300.eot");
+  src: url("../fonts/MuseoSansCyrl-300?#iefix") format("embedded-opentype"),
+    url("../fonts/MuseoSansCyrl-300.woff2") format("woff2"),
+    url("../fonts/MuseoSansCyrl-300t.woff") format("woff"),
+    url("webfont.ttf") format("truetype"),
+    url("../fonts/MuseoSansCyrl-300.svg#svgFontName") format("svg");
+}
+
+@font-face {
+  font-family: "Museo Sans 900";
+  src: url("../fonts/MuseoSansCyrl-900.eot");
+  src: url("../fonts/MuseoSansCyrl-900?#iefix") format("embedded-opentype"),
+    url("../fonts/MuseoSansCyrl-900.woff2") format("woff2"),
+    url("../fonts/MuseoSansCyrl-900t.woff") format("woff"),
+    url("webfont.ttf") format("truetype"),
+    url("../fonts/MuseoSansCyrl-900.svg#svgFontName") format("svg");
+}
+
+@font-face {
+  font-family: "Museo Sans 700";
+  src: url("../fonts/MuseoSansCyrl-700.eot");
+  src: url("../fonts/MuseoSansCyrl-700?#iefix") format("embedded-opentype"),
+    url("../fonts/MuseoSansCyrl-700.woff2") format("woff2"),
+    url("../fonts/MuseoSansCyrl-700t.woff") format("woff"),
+    url("webfont.ttf") format("truetype"),
+    url("../fonts/MuseoSansCyrl-700.svg#svgFontName") format("svg");
+}
+
+@font-face {
+  font-family: "Museo Sans 100";
+  src: url("../fonts/MuseoSansCyrl-100.eot");
+  src: url("../fonts/MuseoSansCyrl-100?#iefix") format("embedded-opentype"),
+    url("../fonts/MuseoSansCyrl-100.woff2") format("woff2"),
+    url("../fonts/MuseoSansCyrl-100t.woff") format("woff"),
+    url("webfont.ttf") format("truetype"),
+    url("../fonts/MuseoSansCyrl-100.svg#svgFontName") format("svg");
+}
+
+/*      MAIN SETTINGS       */
+
+body {
+  box-sizing: border-box;
+  font-family: Museo Sans, sans-serif;
+  color: #9e96a8;
+  letter-spacing: 0.06em;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: "Museo Sans 900";
+}
+
+h2 {
+  color: #9e96a8;
+}
+
+h3 {
+  color: #000000;
+  font-family: "Museo Sans 700";
+}
+
+h4 {
+  margin-bottom: 31px;
+  font-size: 17px;
+  color: #9e96a8;
+  font-family: "Museo Sans 700";
+}
+
+div,
+span,
+a,
+button,
+input,
+form,
+p {
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.section {
+  background: #fff;
+  padding: 111px 0 110px;
+}
+
+.container {
+  max-width: 942px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+a,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+a,
+button,
+inout {
+  transition: all 0.5s ease;
+}
+
+input,
+input:hover,
+input:focus,
+input:active,
+button,
+button:hover,
+button:focus,
+button:active {
+  outline: none;
+}
+
+.btn {
+  margin-top: 32px;
+  background: #82c83d;
+  color: #fff;
+  border-radius: 100px;
+  text-align: center;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-family: "Museo Sans 900";
+  display: inline-block;
+  padding: 17px 47px;
+}
+
+.btn:hover {
+  background: #6fb926;
+  color: #fff;
+}
+
+/*      HEADER       */
+
+.header {
+  background: #2f2f43 url(../img/hudson-hintze-183959-unsplash.png) no-repeat
+    center center;
+  padding-top: 52px;
+  padding-bottom: 59px;
+  color: #fff;
+  text-align: center;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.offer {
+  margin-top: 158px;
+}
+
+.offer__title {
+  letter-spacing: 0.32em;
+  font-size: 45px;
+}
+
+.offer__group {
+  margin-top: 26px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Museo Sans 100";
+}
+
+.arrow__down {
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+  color: #000000;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-top: 231px;
+  line-height: 31px;
+  letter-spacing: -2px;
+}
+
+/*      FIRST SECTION       */
+
+.geo-list {
+  margin-top: 46px;
+}
+
+.geo-list img {
+  margin-bottom: 33px;
+}
+
+.geo-list__text {
+  margin-top: 20px;
+  color: #000000;
+  max-width: 274px;
+  width: 100%;
+  font-size: 13px;
+  font-family: "Museo Sans 100";
+}
+
+.geo-list__link {
+  display: block;
+  margin-top: 10px;
+  color: #82c83d;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+/*      SECOND SECTION       */
+.travel-info {
+  margin-top: 53px;
+}
+
+.travel-info__history {
+  max-width: 455px;
+  width: 100%;
+}
+
+.travel-info__text {
+  font-size: 14px;
+  margin-bottom: 1.3em;
+  line-height: 1.3em;
+  color: #000000;
+  font-family: "Museo Sans 100";
+}
+
+.travel-info__text:last-of-type {
+  margin-bottom: 0;
 }
