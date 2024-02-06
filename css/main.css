@@ -53,7 +53,8 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   padding: 0;
   margin: 0;
   text-transform: uppercase;
@@ -61,28 +62,35 @@ h4 {
 }
 
 h2 {
+  font-size: 26px;
   color: #9e96a8;
+  letter-spacing: 0.1em;
 }
 
 h3 {
   color: #000000;
-  font-family: "Museo Sans 700";
 }
 
 h4 {
-  margin-bottom: 31px;
   font-size: 17px;
   color: #9e96a8;
-  font-family: "Museo Sans 700";
+  letter-spacing: 0.1em;
 }
 
-div,
+h5 {
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+
+h5 div,
 span,
 a,
 button,
 input,
 form,
-p {
+p,
+img {
   box-sizing: border-box;
 }
 
@@ -205,6 +213,12 @@ button:active {
   letter-spacing: -2px;
 }
 
+.arrow__down:hover {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
 /*      FIRST SECTION       */
 
 .geo-list {
@@ -232,8 +246,23 @@ button:active {
   font-size: 13px;
 }
 
+.hover-image-scale {
+  display: inline-block;
+  overflow: hidden; /* Скрываем всё за контуром */
+}
+
+.hover-image-scale img {
+  transition: 1s; /* Время эффекта */
+  display: block;
+}
+
+.hover-image-scale img:hover {
+  transform: scale(1.2); /* Увеличиваем масштаб */
+}
+
 /*      SECOND SECTION       */
 .travel-info {
+  margin-top: 31px;
   margin-top: 53px;
 }
 
@@ -252,4 +281,70 @@ button:active {
 
 .travel-info__text:last-of-type {
   margin-bottom: 0;
+}
+
+.key {
+  max-width: 393px;
+  width: 100%;
+}
+
+.key__list {
+  margin-top: 31px;
+  flex-wrap: wrap;
+  row-gap: 28px;
+}
+
+.key__item {
+  margin-right: 18px;
+  text-align: center;
+  max-width: 119px;
+}
+
+.key__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.key__img {
+  max-width: 119px;
+  width: 100%;
+  border: 2px solid #82c83d;
+  height: 70px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.key__img:after {
+  content: "";
+  display: block;
+  position: absolute;
+  max-width: 101px;
+  width: 100%;
+  height: 55px;
+  border: 1px solid #9fe65a;
+  left: 8px;
+  top: 5px;
+}
+
+.key__title {
+  line-height: 1.7em;
+}
+
+/*      FOOTER       */
+.footer {
+  font-size: 12px;
+  text-align: center;
+  padding-top: 55px;
+  padding-bottom: 63px;
+}
+
+.footer-wrap {
+  justify-content: center;
+}
+
+.footer-wrap__item {
+  margin-right: 90px;
 }
