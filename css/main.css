@@ -5,7 +5,7 @@
   src: url("../fonts/MuseoSansCyrl-300?#iefix") format("embedded-opentype"),
     url("../fonts/MuseoSansCyrl-300.woff2") format("woff2"),
     url("../fonts/MuseoSansCyrl-300t.woff") format("woff"),
-    url("webfont.ttf") format("truetype"),
+    url("../webfont.ttf") format("truetype"),
     url("../fonts/MuseoSansCyrl-300.svg#svgFontName") format("svg");
 }
 
@@ -15,7 +15,7 @@
   src: url("../fonts/MuseoSansCyrl-900?#iefix") format("embedded-opentype"),
     url("../fonts/MuseoSansCyrl-900.woff2") format("woff2"),
     url("../fonts/MuseoSansCyrl-900t.woff") format("woff"),
-    url("webfont.ttf") format("truetype"),
+    url("../webfont.ttf") format("truetype"),
     url("../fonts/MuseoSansCyrl-900.svg#svgFontName") format("svg");
 }
 
@@ -25,7 +25,7 @@
   src: url("../fonts/MuseoSansCyrl-700?#iefix") format("embedded-opentype"),
     url("../fonts/MuseoSansCyrl-700.woff2") format("woff2"),
     url("../fonts/MuseoSansCyrl-700t.woff") format("woff"),
-    url("webfont.ttf") format("truetype"),
+    url("../webfont.ttf") format("truetype"),
     url("../fonts/MuseoSansCyrl-700.svg#svgFontName") format("svg");
 }
 
@@ -35,7 +35,7 @@
   src: url("../fonts/MuseoSansCyrl-100?#iefix") format("embedded-opentype"),
     url("../fonts/MuseoSansCyrl-100.woff2") format("woff2"),
     url("../fonts/MuseoSansCyrl-100t.woff") format("woff"),
-    url("webfont.ttf") format("truetype"),
+    url("../webfont.ttf") format("truetype"),
     url("../fonts/MuseoSansCyrl-100.svg#svgFontName") format("svg");
 }
 
@@ -43,7 +43,7 @@
 
 body {
   box-sizing: border-box;
-  font-family: Museo Sans, sans-serif;
+  font-family: "Museo Sans 300, sans-serif";
   color: #9e96a8;
   letter-spacing: 0.06em;
   margin: 0;
@@ -227,6 +227,35 @@ button:active {
 
 .geo-list img {
   margin-bottom: 33px;
+  box-shadow: 0 0 50px rgb(0 0 0 / 35%);
+}
+
+.geo-list__info {
+  max-width: 296px;
+  width: 100%;
+}
+
+.geo-list__overlay {
+  background: rgb(0, 0, 0, 0.64);
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.geo-list__wrap {
+  position: relative;
+}
+
+.geo-list__info:hover .geo-list__overlay {
+  opacity: 1;
 }
 
 .geo-list__text {
@@ -241,8 +270,8 @@ button:active {
 .geo-list__link {
   display: block;
   margin-top: 10px;
-  color: #82c83d;
-  font-weight: 700;
+  color: #9fe65a;
+  font-weight: bold;
   font-size: 13px;
 }
 
@@ -252,12 +281,7 @@ button:active {
 }
 
 .hover-image-scale img {
-  transition: 1s; /* Время эффекта */
   display: block;
-}
-
-.hover-image-scale img:hover {
-  transform: scale(1.2); /* Увеличиваем масштаб */
 }
 
 /*      SECOND SECTION       */
@@ -347,8 +371,11 @@ button:active {
 
 .footer-wrap {
   justify-content: center;
+  font-family: "Museo Sans 300";
 }
 
 .footer-wrap__item {
   margin-right: 90px;
 }
+
+/*      MEDIA QUERIES       */
