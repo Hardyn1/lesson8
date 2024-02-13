@@ -379,3 +379,82 @@ button:active {
 }
 
 /*      MEDIA QUERIES       */
+
+/* 992-1200px */
+@media screen and (max-width: 992px) {
+}
+
+/* 768-992px Планшетные устройства*/
+@media screen and (max-width: 992px) {
+  .container {
+    width: 700px;
+  }
+  .geo-list__info {
+    width: 30%;
+  }
+  .geo-list img {
+    width: 100%;
+  }
+  .travel-info__history,
+  .key {
+    width: 45%;
+  }
+  .key__item:nth-child(3n) {
+    margin-right: 18px;
+  }
+}
+
+/* 576-768px */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 520px;
+  }
+  .travel-info {
+    flex-direction: column;
+  }
+  .travel-info__history,
+  .key {
+    width: 100%;
+  }
+  .key {
+    margin-top: 20px;
+  }
+  .footer-wrap {
+    flex-direction: column;
+  }
+  .footer-wrap__item {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+}
+
+/* 320-576px */
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  .offer__title {
+    font-size: 28px;
+  }
+  .geo-list {
+    flex-direction: column;
+  }
+
+  .geo-list__info {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .key__list {
+    flex-direction: column;
+  }
+
+  .key__item {
+    margin: 0 auto 30px;
+  }
+
+  .key__item:nth-child(3n) {
+    margin-right: auto;
+  }
+}
